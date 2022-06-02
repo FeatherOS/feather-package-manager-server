@@ -1,0 +1,54 @@
+:root {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #c7c7c7;
+
+    header {
+        height: 80;
+        background: #009b90;
+        padding: 5px 10px;
+        display: flex;
+
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: ". .";
+
+        a {
+            text-decoration: none;
+            color: #000000;
+
+            .info {
+                margin: auto 5px;
+            }
+        }
+
+        .nav {
+            display: flex;
+
+            ul {
+                margin-top: auto;
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+
+                li {
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+}

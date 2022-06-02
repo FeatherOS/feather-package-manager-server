@@ -1,0 +1,53 @@
+Authors:                                               b3yc0d3@gmail.com
+Last Update:                                                20, Jun 2022
+
+
+                 Packe Identifier (PID): Generic Syntax
+
+Copyright Notice
+
+   Copyright (C) 2022 FeatherOS
+
+Table of Contents
+
+   1.  Introduction
+       1.1 Syntax Components
+
+
+1.  Introduction
+
+   A Package Identifier (PID) provides a simple an extensible way to
+   identify a packge. With this kind of format it is posible that more
+   then one package with the same name can exist.
+
+1.1  Syntax Components
+
+   The generic PID syntax consists of a hierarchical sequence of
+   components referred to as the user, name and version.
+
+      PID               = username "." name [ "." version ]
+
+      username          = letter *( letter / digits )
+      name              = lower-letter *( lower-letter / _ / - )
+      version           = Semantic Versioning
+
+      digits            = 0-9
+      letter            = upper-letter / lower-letter
+      upper-letter      = A-Z
+      lower-letter      = a-z
+      special-letters   = - / _ / + / '
+
+
+
+   The following are two syntacly corect Examples:
+
+                   b3yc0d3.marktext.0.1.0
+                   \_____/ \______/ \___/
+                      |        |      |
+                   username    |    version
+                              name
+
+                      b3yc0d3.marktext
+                      \_____/ \______/
+                         |        |   
+                      username   name

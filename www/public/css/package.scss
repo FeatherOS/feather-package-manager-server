@@ -1,0 +1,24 @@
+body {
+    .wrapper {
+        .panel {
+            .body {
+                padding: 10px;
+                font-size: 14px;
+                ul {
+                    li {
+                        span {
+                            font-weight: bold;
+                            margin-right: 2px;
+                        }
+                    }
+                }
+
+                pre {
+                    font-family: monospace;
+                    color: #3e3d47;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

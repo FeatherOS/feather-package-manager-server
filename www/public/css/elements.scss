@@ -1,0 +1,20 @@
+.panel {
+    border: 1px solid #000000;
+    .header {
+        background: #009b90;
+        padding: 3px 5px;
+
+        a {
+            text-align: center;
+            color: #c7c7c7;
+            padding: 2px 0;
+        }
+    }
+
+    .body {
+        padding: 4px;
+        ul {
+            list-style: none;
+        }
+    }
+}

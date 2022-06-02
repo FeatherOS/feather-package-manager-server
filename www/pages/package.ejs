@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeatherPackage -- {{PACKAGE_NAME}}</title>
+
+    <link rel="stylesheet" href="/css/header.min.css">
+    <link rel="stylesheet" href="/css/elements.min.css">
+    <link rel="stylesheet" href="/css/package.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="info">
+            <a href="/">
+                <h2>Feather OS Package Server</h2>
+                <p>Here you will find Packages for Feather OS</p>
+            </a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/stats">Statistics</a></li>
+                <li>
+                    <form action="/search" method="get">
+                        <ul>
+                            <li><input type="search" name="q" placeholder="Keywords"></li>
+                            <li><input type="submit" style="padding: 0 5px;" value="Search"></li>
+                        </ul>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="left">
+
+        </div>
+
+        <div class="right">
+            <div class="panel">
+                <div class="header">
+                    <a>Package Details</a>
+                </div>
+
+                <div class="body">
+                    <ul>
+                        <li><span>Name:</span><a>{{PACKAGE_NAME}}</a></li>
+                        <li><span>Maintainer:</span><a>{{PACKAGE_MAINTAINER_EMAIL}}</a></li>
+                        <li><span>Package Added:</span><a>{{PACKAGE_CREATED}}</a></li>
+                        <li><span>Last Update:</span><a>{{PACKAGE_UPDATED}}</a></li>
+                        <li><span>Commit Hash:</span><a>{{PACKAGE_COMMIT_HASH}}</a></li>
+                        <li><span>License:</span><a>{{PACKAGE_LICENSE}}</a></li>
+                        <li><span>Description:</span><br>
+                            <pre>This is a short Description
+of this thing.
+                                    </pre>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

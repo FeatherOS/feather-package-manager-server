@@ -1,0 +1,6 @@
+reposFolder: /usr/feather-ps/repos
+dbFolder: /var/feather-ps/db
+
+port:
+  normal: 8080
+  tsl/ssl: 443

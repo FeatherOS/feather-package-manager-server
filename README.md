@@ -1,4 +1,2 @@
-# feather-package-manager-server
-This is the Package Manager Server for the Feather Package Manager.
-
-Will be programmed soon
+# Feather Package Server
+This is the Package Server for the Feather Package Manager.
